@@ -24,7 +24,7 @@ jobs:
       run: |
         ssh ${{ secrets.USERNAME }}@${{ secrets.HOST }} << EOF
           rm -rf ~/react-deploy || true
-          git clone https://${{ secrets.GH_TOKEN }}@github.com/YOUR_USERNAME/YOUR_REPO.git ~/react-deploy
+          git clone https://${{ secrets.GH_TOKEN }}@github.com:AmeerMH/R.git ~/react-deploy
           cd ~/react-deploy
 
           docker stop react-app || true
